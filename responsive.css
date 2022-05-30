@@ -1,0 +1,115 @@
+@media screen and (min-width:1000px) {
+    #btn-menu:hover{
+        opacity: 1;
+        padding-bottom:25px;
+    }
+    
+    .btn-menu-text:after {
+        content:"\a";
+        white-space: pre;
+    }
+    
+    #down-arrow {
+      
+      position: absolute;
+      margin-left:-5px;
+      transition: 0.5s;
+      opacity: 0;
+      color:white;
+    }
+    
+    #btn-menu:hover #down-arrow {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #down-arrow {
+        display: none;
+    }
+}
+
+
+/* breakpoint tab */
+@media screen and (max-width: 868px) {
+    .navbar-list ul {
+        width: 73%;
+    }
+    .navbar-logo{
+        position: absolute;
+        top: 10px;
+        left: 40px;
+    }
+    #down-arrow {
+        display: none;
+    }
+
+    .about-us-header {
+        border-bottom: 1px solid black;
+    }
+   
+    .about-us-header, .about-us-text {
+        text-align: center;
+        width: 100%;
+    }
+    .menu-details p {
+        margin-top:-70px;
+    }
+
+    #btn-menu {
+        padding: 12px 50px;
+        width: 100%;
+    }
+
+    #btn-menu:hover{
+        opacity: 1;
+    }
+
+}
+/* akhir breaKpoint tab */
+
+/* breakpoint hp */
+@media screen and (max-width: 576px) {
+    .navbar-list ul {
+        display: none;
+    }
+    .navbar-logo {
+        position: relative;
+        /* text-align: center; */
+        /* margin-top: 25px;
+        margin-left: -50px; */
+        top: 10px;
+        left: 40%;
+    }
+    .navbar-logo img{
+        width: 90px;
+        height: 90px;
+    }
+    .navbar-text{
+        display: block;
+        top: 0;
+        left: 15px;
+
+    }
+    .navbar-icon{
+        display: flex;
+        /* top: 0; */
+        bottom: 200px;
+        top: 20px;
+        right: 40px;
+    }
+    #btn-menu {
+        padding: 12px 25px;
+    }
+
+    .footer-right {
+        float: none;
+        text-align: center;
+    }
+
+    .footer-left {
+        float: none;
+        text-align: center;
+    }
+}
+/* akhir breakpoint hp */
